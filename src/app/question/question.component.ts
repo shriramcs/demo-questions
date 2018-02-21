@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'rank-question',
+  templateUrl: './question.component.html'
 })
-export class AppComponent {
+export class QuestionComponent {
   title = 'app';
   welcome:boolean = false;
   onEnter(){

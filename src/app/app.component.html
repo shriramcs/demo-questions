@@ -1,20 +1,122 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="http://angularjs.blogspot.ca/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="">
+  <div id="typeform">
+    <div class="intro screen" *ngIf="!welcome">
+      <div class="content-wrapper">
+        <div class="content scrollable" style="padding-top: 40px; margin-bottom: 40px;">
+          <div class="media">
+            <div class="attachment">
+              <img src="/assets/assessment-logo.png"
+                style="width: 460px; height: 127px; display: inline;">
+            </div>
+          </div>
+          <div class="text" style="padding-top: 30px; margin-left: 0px;">
+            <strong>Welcome to the Entrepreneurial Awareness Assessment</strong>
+          </div>
+          <div class="description">
+            This assessment is designed to illuminate critically important information about you and your experiences in your company.<br><br>This assessment is packed with really great information that will help us, the Good Startups coaching team, to provide you with a free automated self awareness report based on your&nbsp;<strong>radically honest</strong>&nbsp;answers that you provide here.<br><br>Rest assured that your individual dataset will never be shared with anyone outside of the Good Startups coaching team. We only collect your personal information to track your progress. &nbsp;&nbsp;&nbsp;<br><br>We are so grateful for your participation. Now get comfy, and get ready to go deep for about 15 - 20 minutes.
+          </div>
+          <div class="button-wrapper" style="margin-top: 0px;">
+            <div class="button general full enabled hover-effect" style="display: none;">
+              start
+            </div>
+            <div class="button-text">
+              press <strong>ENTER</strong>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="footer step0" style="display: block;">
+        <div class="persistent-wrapper">
+          <div class="persistent background"></div>
+          <div class="persistent"></div>
+        </div>
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="button-wrapper">
+            <a class="button general full enabled hover-effect js-intro-button" 
+              target="_parent" (click)="onEnter()" style="">
+              start
+            </a>
+            <div class="button-text">press <strong>ENTER</strong></div>
+          </div>
+        </div>
+        <div class="scroll-smooth"></div>
+      </div>
+    </div>
 
+    <div class="form" style="height: 55px; top: -115px;" *ngIf="welcome">
+      
+      <ul class="questions" style="margin-top: 331px; margin-bottom: 411px; top: 0px;">
+          <li class="statement  visible active focus" id="Nu1t" data-model="{&quot;id&quot;:&quot;Nu1t&quot;,&quot;type&quot;:&quot;statement&quot;,&quot;required&quot;:false,&quot;quoteMarksEnabled&quot;:false}">
+            <div class="wrapper" style="height: 749px;">
+              <div class="item" style="display: none;">“</div>
+              <div class="question"><span><strong>Confidentiality Agreement</strong><br><br>This assessment is designed to collect critically important information about you as well as your beliefs, strategies, and experiences working in this organization.<br><br>Rest assured that your individual dataset will&nbsp;never be shared with anyone&nbsp;outside of the Good Startups core team. <br><br>In the future, we will show our partners and clients aggregate data from everyone who has taken our survey, where your responses will be an anonymous part of an average score. In other words, neither you nor your company will ever be identified through this survey.<br><br>This survey is also a great way for us to track the effectiveness of your company as well as the work we do with you. We'd love to use this assessment as an opportunity to continue helping you grow.<br><br>If you agree to our use of your data, click continue or press enter. Otherwise, you may exit the survey at any time.</span></div>
+              <div class="content">
+                <div class="content-wrapper">
+                  <div class="attachment-wrapper">
+                    <div class="clear"></div>
+                  </div>
+                  <div class="button-wrapper continue">
+                    <div class="button nav enabled"><span>Continue</span>	</div>
+                  </div>
+                  <div class="text">press <strong>ENTER</strong></div>                    
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="textfield required   visible active focus ready" id="HtG2" 
+            data-model="{&quot;id&quot;:&quot;HtG2&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;name&quot;:&quot;&quot;,&quot;required&quot;:true,&quot;showPadlockIcon&quot;:false}">
+            <div class="wrapper" style="height: 101px;">
+              <div class="item">
+                <span>1</span>
+                <div class="arrow">
+                  <div class="arrow-right"></div>
+                </div>
+              </div>
+              <div class="question">
+                <span>First name
+                  <span class="asterisk">*</span>
+                </span>
+              </div>
+              <div class="content">
+                <div class="content-wrapper">
+                  <div class="attachment-wrapper">
+                    <div class="control">
+                      <div class="input">
+                        <input class="" type="text" autocomplete="off">
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="message ">
+                    <span></span>
+                    <div></div>
+                  </div>
+                  <div class="confirm container step0">
+                    <div class="button-wrapper confirm">
+                      <div class="button nav enabled">
+                        <span>OK</span>
+                        <span class="confirm"></span>
+                      </div>
+                    </div>
+                    <div class="text">press
+                      <strong>ENTER</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="textfield required   visible active" id="pixc" data-model="{&quot;id&quot;:&quot;pixc&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;name&quot;:&quot;&quot;,&quot;required&quot;:true,&quot;showPadlockIcon&quot;:false}">
+              <rank-question></rank-question>  
+          </li>
+          
+
+          </ul>
+      
+    </div>
+  </div>  
+</div>
