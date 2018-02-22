@@ -1,12 +1,12 @@
 <div class="wrapper" style="height: 101px;">
         <div class="item">
-          <span>2</span>
+          <span>{{qn.num}}</span>
           <div class="arrow">
             <div class="arrow-right"></div>
           </div>
         </div>
         <div class="question">
-          <span>Last Name
+          <span> {{qn.label}}
             <span class="asterisk">*</span>
           </span>
         </div>
@@ -15,7 +15,7 @@
             <div class="attachment-wrapper">
               <div class="control">
                 <div class="input">
-                  <input class="" type="text" autocomplete="off">
+                  <input class="" setfocusinput type="text" autocomplete="off" [(ngModel)]="qn.answer">
                 </div>
               </div>
               <div class="clear"></div>
@@ -29,7 +29,8 @@
               <div class="button-wrapper confirm">
                 <div class="button nav enabled">
                   <span>OK</span>
-                  <span class="confirm"></span>
+                  <!-- <span class="confirm"></span> -->
+                  <span>&nbsp;</span>
                 </div>
               </div>
               <div class="text">press

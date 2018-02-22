@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="">
+<div class="confirm-inline confirm-nav">
   <div id="typeform">
     <div class="intro screen" *ngIf="!welcome">
       <div class="content-wrapper">
@@ -65,57 +65,40 @@
               </div>
             </div>
           </li>
-          <li class="textfield required   visible active focus ready" id="HtG2" 
-            data-model="{&quot;id&quot;:&quot;HtG2&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;name&quot;:&quot;&quot;,&quot;required&quot;:true,&quot;showPadlockIcon&quot;:false}">
-            <div class="wrapper" style="height: 101px;">
-              <div class="item">
-                <span>1</span>
-                <div class="arrow">
-                  <div class="arrow-right"></div>
-                </div>
-              </div>
-              <div class="question">
-                <span>First name
-                  <span class="asterisk">*</span>
-                </span>
-              </div>
-              <div class="content">
-                <div class="content-wrapper">
-                  <div class="attachment-wrapper">
-                    <div class="control">
-                      <div class="input">
-                        <input class="" type="text" autocomplete="off">
-                      </div>
-                    </div>
-                    <div class="clear"></div>
-                  </div>
-                  <div class="clear"></div>
-                  <div class="message ">
-                    <span></span>
-                    <div></div>
-                  </div>
-                  <div class="confirm container step0">
-                    <div class="button-wrapper confirm">
-                      <div class="button nav enabled">
-                        <span>OK</span>
-                        <span class="confirm"></span>
-                      </div>
-                    </div>
-                    <div class="text">press
-                      <strong>ENTER</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class="textfield required   visible active" id="pixc" data-model="{&quot;id&quot;:&quot;pixc&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;name&quot;:&quot;&quot;,&quot;required&quot;:true,&quot;showPadlockIcon&quot;:false}">
-              <rank-question></rank-question>  
+          <li class="textfield required  visible active" setfocus
+            *ngFor="let qn of questions;">
+            <rank-question [qn]="qn"></rank-question>  
           </li>
           
 
           </ul>
+
+
+          <!-- <div id="unfixed-footer" class="lightness-step step0" style="height: 92px;">
+            <div class="footer-message">
+              <div class="background"></div>
+              <div class="content">
+                <span class="default-message"></span>
+              </div>
+            </div>
+            <div class="persistent background lightness-step step0"></div>
+            <div class="content">
+              <div class="button-wrapper submit">
+                <div class="button general hover-effect enabled">Submit</div>
+                <div class="button-text">press
+                  <strong>ENTER</strong>
+                </div>
+              </div>
+            
+              <div class="button-wrapper review">
+                <div class="button general red enabled hover-effect">Review</div>
+                <div class="button-text">press
+                  <strong>ENTER</strong>
+                </div>
+              </div>
+            
+            </div>
+          </div> -->
       
     </div>
   </div>  
